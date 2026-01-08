@@ -3,10 +3,10 @@ En hemsida som är schoolsoft med en study-buddy applikation(?)
 
 Namn på alla deltagare
 -------------------------
-Leoandro Montero Al-kassab
-Vendel Nyblom
-Adrian Jara Zeeck
-Filip Nordström
+Leoandro Montero Al-kassab <br>
+Vendel Nyblom  <br>
+Adrian Jara Zeeck  <br>
+Filip Nordström  <br>
 Oscar Hole
 
 ### Tävlar i kategori: 

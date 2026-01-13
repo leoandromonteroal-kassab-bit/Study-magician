@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="sidebar">
+    <a href="programmveckor.html">🏠</a>
+    <a href="schedule.html">📅</a>
+    <a href="todo.html">✏️</a>
+    <a href="login.html">👤</a>
+  </nav>
+
+<main class="content">
+  <div class="card split">
+    <div class="left">
+      <h2>Login</h2>
+      <input id="user" placeholder="Username">
+      <input id="pass" type="password" placeholder="Password">
+      <button onclick="login()">Log in</button>
+      <p id="loginMsg"></p>
+    </div>
+
+    <div class="right">
+      <div>
+        <h2>Do you not have an account?</h2>
+        <button>Sign Up</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>

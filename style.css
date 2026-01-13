@@ -1,0 +1,229 @@
+:root {
+  --purple: #c026d3;
+  --purple-dark: #a21caf;
+  --light: #f5f5f5;
+  --gray: #ddd;
+}
+
+/* GLOBAL RESET */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #eee;
+}
+
+/* LAYOUT-CONTAINER */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* SIDOMENY */
+nav,
+.sidebar {
+  width: 90px;
+  background: linear-gradient(180deg, var(--purple), var(--purple-dark));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0;
+}
+
+nav a,
+.sidebar a {
+  width: 50px;
+  height: 50px;
+  margin: 10px 0;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover,
+.sidebar a:hover {
+  background: white;
+  color: var(--purple);
+}
+
+/* MAIN-INNEHÅLL */
+main,
+.content {
+  flex: 1;
+  padding: 30px;
+  overflow: auto;
+}
+
+/* TOPPBAR */
+.topbar {
+  background: var(--purple);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 15px 15px 0 0;
+  font-weight: bold;
+}
+
+/* CARD */
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  max-width: 900px;
+}
+
+/* INPUT & BUTTON */
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--gray);
+  margin: 8px 0;
+}
+
+button {
+  background: var(--purple);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: var(--purple-dark);
+}
+
+/* TABLE (SCHEMA) */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+th {
+  background: var(--purple);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+td {
+  background: #fafafa;
+  border: 1px solid var(--gray);
+  height: 60px;
+  border-radius: 8px;
+}
+
+/* TODO */
+.todo-item {
+  display: flex;
+  align-items: center;
+  background: #fafafa;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 8px 0;
+  border: 1px solid var(--gray);
+}
+
+.todo-item button {
+  margin-left: auto;
+  background: red;
+  padding: 6px 10px;
+}
+
+/* LOGIN / SIGNUP SPLIT */
+.split {
+  display: flex;
+  height: 400px;
+}
+
+.split .left {
+  flex: 1;
+}
+
+.split .right {
+  flex: 1;
+  background: var(--purple);
+  color: white;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+}
+
+/* WIZARD-AREA */
+.wizard-area {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 420px;
+  text-align: center;
+  z-index: 10;
+}
+
+.wizard-img {
+  width: 280px;
+}
+
+.speech-bubble {
+  background: var(--purple);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #333;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.speech-bubble small {
+  display: block;
+  margin-bottom: 8px;
+  opacity: 0.9;
+}
+
+.go-btn {
+  margin-top: 10px;
+  background: var(--purple);
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.go-btn:hover {
+  background: var(--purple-dark);
+}
+
+/* TASKS SPECIFIC (programmveckor.html) */
+.tasks h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.task {
+  margin-bottom: 15px;
+}
+
+.task strong {
+  display: block;
+  font-size: 1.1rem;
+}
+
+.due {
+  color: #c0392b;
+  font-size: 0.9rem;
+}

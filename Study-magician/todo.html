@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<title>To-do</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="sidebar">
+    <a href="programmveckor.html">🏠</a>
+    <a href="schedule.html">📅</a>
+    <a href="todo.html">✏️</a>
+    <a href="login.html">👤</a>
+  </nav>
+
+<main class="content">
+  <div class="card">
+    <div class="topbar">To-do list</div>
+    <input id="taskInput" placeholder="+ Add new task">
+    <button onclick="addTask()">Add</button>
+    <div id="tasks"></div>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

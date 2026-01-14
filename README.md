@@ -3,7 +3,6 @@
 # Study Mage
 En planeringshemsida för elever
 
-Namn på alla deltagare
 Leoandro Montero Al-kassab
 Vendel Nyblom
 Adrian Jara Zeeck

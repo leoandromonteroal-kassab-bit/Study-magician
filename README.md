@@ -11,6 +11,7 @@ Oscar Hole
 
 ### Tävlar i kategori:
 Bästa helhetslösning
+
 Bästa användarupplevelse (UX/UI)
 
 ## Projekt & Teknisk- beskrivning

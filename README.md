@@ -3,10 +3,10 @@
 # Study Mage
 En planeringshemsida för elever
 
-Leoandro Montero Al-kassab
-Vendel Nyblom
-Adrian Jara Zeeck
-Filip Nordström
+Leoandro Montero Al-kassab,
+Vendel Nyblom,
+Adrian Jara Zeeck,
+Filip Nordström och
 Oscar Hole
 
 ### Tävlar i kategori:

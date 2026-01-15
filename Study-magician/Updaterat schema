@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<body>
+
+  <div class="layout">
+    <nav class="sidebar">
+      <a href="programmveckor.html">🏠</a>
+      <a href="schedule.html">📅</a>
+      <a href="todo.html">✏️</a>
+      <a href="login.html">👤</a>
+    </nav>
+
+    <main class="content">
+      <div class="card split">
+        <div class="left">
+          <h2>Login</h2>
+          <input id="user" placeholder="Username">
+          <input id="pass" type="password" placeholder="Password">
+          <button onclick="login()">Log in</button>
+          <p id="loginMsg"></p>
+        </div>
+
+        <div class="right">
+          <div>
+            <h2>Do you not have an account?</h2>
+            <button>Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div class="wizard-area">
+    <div class="speech-bubble">
+      <small>Hej jag är Gandalf den hårige Trollkarlen!</small>
+      <p>
+        loremipsum loremipsum<br>
+        loremipsum loremipsum<br>
+        loremipsum loremipsum
+      </p>
+    </div>
+
+    <img src="wizardpic.png" alt="Trollkarl" class="wizard-img">
+    <button class="go-btn" onclick="toggleWizard()">Göm</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Mage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="layout">
+    <nav class="sidebar">
+      <a href="programmveckor.html">🏠</a>
+      <a href="schedule.html">📅</a>
+      <a href="todo.html">✏️</a>
+      <a href="login.html">👤</a>
+    </nav>
+
+    <main class="content">
+      <h1>STUDY MAGE</h1>
+
+      <section class="tasks">
+        <h2>Upcoming tasks:</h2>
+
+        <div class="task">
+          <strong>Finish doing thing</strong>
+          <span class="due">⚠ Due 01-19-2026</span>
+        </div>
+
+        <div class="task">
+          <strong>Textetxttext</strong>
+          <span class="due">⚠ Due 03-20-2026</span>
+        </div>
+
+        <div class="task">
+          <strong>Lorem ipsum</strong>
+          <span class="due">⚠ Due xx-xx-xxxx</span>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="wizard-area">
+    <div class="speech-bubble">
+      <small>Hej jag är Gandalf den hårige Trollkarlen!</small>
+      <p>
+        loremipsum loremipsum<br>
+        loremipsum loremipsum<br>
+        loremipsum loremipsum
+      </p>
+    </div>
+
+    <img src="wizardpic.png" alt="Trollkarl" class="wizard-img">
+    <button class="go-btn" onclick="toggleWizard()">Göm</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Schema</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<body>
+
+  <div class="layout">
+    <nav class="sidebar">
+      <a href="programmveckor.html">🏠</a>
+      <a href="schedule.html">📅</a>
+      <a href="todo.html">✏️</a>
+      <a href="login.html">👤</a>
+    </nav>
+
+    <main class="content">
+      <div class="card">
+        <div class="topbar">Schema</div>
+        <div id="monthHeader" class="month-header">
+          <button id="prevWeekBtn" class="week-nav-btn" onclick="previousWeek()">←</button>
+          <div id="monthText"></div>
+          <button id="nextWeekBtn" class="week-nav-btn" onclick="nextWeek()">→</button>
+        </div>
+        <div id="scheduleContainer">
+          <div class="time-column">
+            <div class="time-header" id="timeHeader">Tid</div>
+            <div class="time-slot">00:00</div>
+            <div class="time-slot">01:00</div>
+            <div class="time-slot">02:00</div>
+            <div class="time-slot">03:00</div>
+            <div class="time-slot">04:00</div>
+            <div class="time-slot">05:00</div>
+            <div class="time-slot">06:00</div>
+            <div class="time-slot">07:00</div>
+            <div class="time-slot">08:00</div>
+            <div class="time-slot">09:00</div>
+            <div class="time-slot">10:00</div>
+            <div class="time-slot">11:00</div>
+            <div class="time-slot">12:00</div>
+            <div class="time-slot">13:00</div>
+            <div class="time-slot">14:00</div>
+            <div class="time-slot">15:00</div>
+            <div class="time-slot">16:00</div>
+            <div class="time-slot">17:00</div>
+            <div class="time-slot">18:00</div>
+            <div class="time-slot">19:00</div>
+            <div class="time-slot">20:00</div>
+            <div class="time-slot">21:00</div>
+            <div class="time-slot">22:00</div>
+            <div class="time-slot">23:00</div>
+            <div class="time-slot">24:00</div>
+          </div>
+          <div class="days-container">
+            <div class="day-column" data-day="Måndag">
+              <div class="day-header">Mån</div>
+              <div class="day-slots"></div>
+            </div>
+            <div class="day-column" data-day="Tisdag">
+              <div class="day-header">Tis</div>
+              <div class="day-slots"></div>
+            </div>
+            <div class="day-column" data-day="Onsdag">
+              <div class="day-header">Ons</div>
+              <div class="day-slots"></div>
+            </div>
+            <div class="day-column" data-day="Torsdag">
+              <div class="day-header">Tor</div>
+              <div class="day-slots"></div>
+            </div>
+            <div class="day-column" data-day="Fredag">
+              <div class="day-header">Fre</div>
+              <div class="day-slots"></div>
+            </div>
+            <div class="day-column" data-day="Lördag">
+              <div class="day-header">Lör</div>
+              <div class="day-slots"></div>
+            </div>
+            <div class="day-column" data-day="Söndag">
+              <div class="day-header">Sön</div>
+              <div class="day-slots"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <select id="daySelect">
+            <option>Måndag</option>
+            <option>Tisdag</option>
+            <option>Onsdag</option>
+            <option>Torsdag</option>
+            <option>Fredag</option>
+            <option>Lördag</option>
+            <option>Söndag</option>
+          </select>
+          <div>
+            <label>Från: <input type="time" id="startTime" value="09:00"></label>
+          </div>
+          <div>
+            <label>Till: <input type="time" id="endTime" value="10:00"></label>
+          </div>
+          <input id="eventInput" placeholder="Händelse">
+          <button onclick="addSchedule()">Lägg till</button>
+          <button id="editBtn" onclick="toggleEdit()">Redigera schema</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div class="wizard-area">
+    <div class="speech-bubble">
+      <small>Hej jag är Gandalf den hårige Trollkarlen!</small>
+      <p>
+        loremipsum loremipsum<br>
+        loremipsum loremipsum<br>
+        loremipsum loremipsum
+      </p>
+    </div>
+
+    <img src="wizardpic.png" alt="Trollkarl" class="wizard-img">
+    <button class="go-btn" onclick="toggleWizard()">Göm</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+let tasks = JSON.parse(localStorage.getItem("tasks") || "[]");
+
+let schedule = JSON.parse(localStorage.getItem("schedule") || '{"Måndag":[],"Tisdag":[],"Onsdag":[],"Torsdag":[],"Fredag":[],"Lördag":[],"Söndag":[]}');
+
+let editMode = false;
+let currentWeekOffset = 0;
+
+function render() {
+  const div = document.getElementById("tasks");
+  if (!div) return;
+  div.innerHTML = "";
+  tasks.forEach((t, i) => {
+    div.innerHTML += `
+      <div class="todo-item">
+        <input type="checkbox">
+        ${t}
+        <button onclick="removeTask(${i})">X</button>
+      </div>`;
+  });
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+}
+
+function addTask() {
+  const input = document.getElementById("taskInput");
+  if (input.value) {
+    tasks.push(input.value);
+    input.value = "";
+    render();
+  }
+}
+
+function removeTask(i) {
+  tasks.splice(i, 1);
+  render();
+}
+
+function getWeekNumber(date) {
+  const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+  const dayNum = d.getUTCDay() || 7;
+  d.setUTCDate(d.getUTCDate() + 4 - dayNum);
+  const yearStart = new Date(Date.UTC(d.getUTCFullYear(),0,1));
+  return Math.ceil((((d - yearStart) / 86400000) + 1)/7);
+}
+
+function getWeekDates() {
+  const now = new Date();
+  const dayOfWeek = now.getDay(); // 0=Sun, 1=Mon, ..., 6=Sat
+  const monday = new Date(now);
+  monday.setDate(now.getDate() - (dayOfWeek === 0 ? 6 : dayOfWeek - 1) + (currentWeekOffset * 7));
+  const dates = [];
+  for (let i = 0; i < 7; i++) {
+    const date = new Date(monday);
+    date.setDate(monday.getDate() + i);
+    dates.push(date);
+  }
+  return dates;
+}
+
+function renderSchedule() {
+  // Clear all events
+  document.querySelectorAll('.event').forEach(e => e.remove());
+
+  // Update month header
+  const dates = getWeekDates();
+  const monthName = dates[0].toLocaleString('sv-SE', { month: 'long' });
+  const year = dates[0].getFullYear();
+  document.getElementById('monthText').textContent = monthName.charAt(0).toUpperCase() + monthName.slice(1) + ' ' + year;
+
+  // Update time header with week number
+  const weekNum = getWeekNumber(dates[0]);
+  document.getElementById('timeHeader').textContent = `Tid\nV. ${weekNum}`;
+
+  // Update headers with dates (day name and date only, no month)
+  const dayNames = ['Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag', 'Söndag'];
+  dates.forEach((date, i) => {
+    const header = document.querySelector(`.day-column[data-day="${dayNames[i]}"] .day-header`);
+    if (header) {
+      const day = date.getDate();
+      header.innerHTML = `${dayNames[i]} ${day}`;
+    }
+  });
+
+  // Highlight today
+  const todayName = new Date().toLocaleString('sv-SE', { weekday: 'long' });
+  document.querySelectorAll('.day-column').forEach(col => col.classList.remove('today'));
+  const todayCol = document.querySelector(`.day-column[data-day="${todayName}"]`);
+  if (todayCol) todayCol.classList.add('today');
+
+  const days = ['Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag', 'Söndag'];
+  days.forEach(day => {
+    // Sort events by start time
+    schedule[day].sort((a, b) => {
+      const timeA = a.start || a.time || '00:00';
+      const timeB = b.start || b.time || '00:00';
+      return timeA.localeCompare(timeB);
+    });
+    schedule[day].forEach((e, i) => {
+      const startTime = e.start || e.time || '00:00';
+      const endTime = e.end || (e.time ? '01:00' : '01:00'); // default 1 hour
+      const [startH, startM] = startTime.split(':').map(Number);
+      const [endH, endM] = endTime.split(':').map(Number);
+      const startMinutes = startH * 60 + startM;
+      const endMinutes = endH * 60 + endM;
+      const duration = endMinutes - startMinutes;
+      const top = startMinutes * 0.23;
+      const height = duration * 0.23;
+
+      const eventDiv = document.createElement('div');
+      eventDiv.className = 'event';
+      eventDiv.style.top = top + 'px';
+      eventDiv.style.height = height + 'px';
+      eventDiv.innerHTML = e.event;
+      if (editMode) {
+        eventDiv.innerHTML += `<button class="delete-btn" onclick="removeEvent('${day}', ${i})">X</button>`;
+      }
+
+      const daySlots = document.querySelector(`.day-column[data-day="${day}"] .day-slots`);
+      if (daySlots) {
+        daySlots.appendChild(eventDiv);
+      }
+    });
+  });
+
+  localStorage.setItem("schedule", JSON.stringify(schedule));
+}
+
+function previousWeek() {
+  currentWeekOffset--;
+  renderSchedule();
+}
+
+function nextWeek() {
+  currentWeekOffset++;
+  renderSchedule();
+}
+
+function removeEvent(day, i) {
+  schedule[day].splice(i, 1);
+  renderSchedule();
+}
+
+function toggleEdit() {
+  editMode = !editMode;
+  document.getElementById('editBtn').textContent = editMode ? 'Sluta redigera' : 'Redigera schema';
+  renderSchedule();
+}
+
+function addSchedule() {
+  const day = document.getElementById("daySelect").value;
+  const start = document.getElementById("startTime").value;
+  const end = document.getElementById("endTime").value;
+  const event = document.getElementById("eventInput").value;
+  if (start < end && event) {
+    schedule[day].push({start, end, event});
+    document.getElementById("eventInput").value = "";
+    renderSchedule();
+  } else {
+    alert("End time must be after start time and event name required");
+  }
+}
+
+function hideWizard() {
+  document.querySelector('.wizard-area').style.display = 'none';
+}
+
+function toggleWizard() {
+  const wizard = document.querySelector('.wizard-area');
+  const btn = document.querySelector('.go-btn');
+  if (wizard.style.display === 'none') {
+    wizard.style.display = 'block';
+    btn.innerText = 'Göm';
+  } else {
+    wizard.style.display = 'none';
+    btn.innerText = 'Visa';
+  }
+}
+
+render();
+renderSchedule();
+
+// Validate end time is after start time
+document.getElementById('startTime').addEventListener('change', function() {
+  const start = this.value;
+  const end = document.getElementById('endTime').value;
+  if (end && start >= end) {
+    // Auto-adjust end time to 1 hour after start
+    const [h, m] = start.split(':');
+    const newEnd = (parseInt(h) + 1).toString().padStart(2, '0') + ':' + m;
+    document.getElementById('endTime').value = newEnd;
+  }
+});
+
+document.getElementById('endTime').addEventListener('change', function() {
+  const start = document.getElementById('startTime').value;
+  const end = this.value;
+  if (start && end <= start) {
+    alert('End time must be after start time');
+    this.value = start;
+  }
+});
+
+/* LOGIN (simulerad) */
+function login() {
+  const u = document.getElementById("user").value;
+  const p = document.getElementById("pass").value;
+  document.getElementById("loginMsg").innerText =
+    u && p ? "Inloggad (simulerad)" : "Fyll i alla fält";
+}
+:root {
+  --purple: #c026d3;
+  --purple-dark: #a21caf;
+  --light: #f5f5f5;
+  --gray: #ddd;
+}
+
+/* GLOBAL RESET */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #eee;
+}
+
+/* LAYOUT-CONTAINER */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* SIDOMENY */
+nav,
+.sidebar {
+  width: 90px;
+  background: linear-gradient(180deg, var(--purple), var(--purple-dark));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0;
+}
+
+nav a,
+.sidebar a {
+  width: 50px;
+  height: 50px;
+  margin: 10px 0;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover,
+.sidebar a:hover {
+  background: white;
+  color: var(--purple);
+}
+
+/* MAIN-INNEHÅLL */
+main,
+.content {
+  flex: 1;
+  padding: 30px;
+  overflow: auto;
+}
+
+/* TOPPBAR */
+.topbar {
+  background: var(--purple);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 15px 15px 0 0;
+  font-weight: bold;
+}
+
+/* CARD */
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+}
+
+/* INPUT & BUTTON */
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--gray);
+  margin: 8px 0;
+}
+
+button {
+  background: var(--purple);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: var(--purple-dark);
+}
+
+/* TABLE (SCHEMA) */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+th {
+  background: var(--purple);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+td {
+  background: #fafafa;
+  border: 1px solid var(--gray);
+  height: 60px;
+  border-radius: 8px;
+}
+
+/* TODO */
+.todo-item {
+  display: flex;
+  align-items: center;
+  background: #fafafa;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 8px 0;
+  border: 1px solid var(--gray);
+}
+
+.todo-item button {
+  margin-left: auto;
+  background: red;
+  padding: 6px 10px;
+}
+
+/* LOGIN / SIGNUP SPLIT */
+.split {
+  display: flex;
+  height: 400px;
+}
+
+.split .left {
+  flex: 1;
+}
+
+.split .right {
+  flex: 1;
+  background: var(--purple);
+  color: white;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+}
+
+/* WIZARD-AREA */
+.wizard-area {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 420px;
+  text-align: center;
+  z-index: 10;
+}
+
+.wizard-img {
+  width: 280px;
+}
+
+.speech-bubble {
+  background: var(--purple);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #333;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.speech-bubble small {
+  display: block;
+  margin-bottom: 8px;
+  opacity: 0.9;
+}
+
+.go-btn {
+  margin-top: 10px;
+  background: var(--purple);
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.go-btn:hover {
+  background: var(--purple-dark);
+}
+
+/* TASKS SPECIFIC (programmveckor.html) */
+.tasks h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.task {
+  margin-bottom: 15px;
+}
+
+.task strong {
+  display: block;
+  font-size: 1.1rem;
+}
+
+.due {
+  color: #c0392b;
+  font-size: 0.9rem;
+}
+
+/* SCHEDULE CALENDAR */
+.month-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px;
+  background: #f5f5f5;
+  border-bottom: 2px solid var(--purple);
+  margin-bottom: 15px;
+}
+
+#monthText {
+  min-width: 150px;
+  text-align: center;
+}
+
+.week-nav-btn {
+  background: var(--purple);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.week-nav-btn:hover {
+  background: var(--purple-dark);
+}
+
+#scheduleContainer {
+  display: flex;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+}
+
+.time-column {
+  width: 80px;
+  border-right: 1px solid #ddd;
+}
+
+.time-header {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  background: #f5f5f5;
+}
+
+.time-slot {
+  height: 14px;
+  display: flex;
+  align-items: flex-start;
+  padding: 1px 4px;
+  border-bottom: 1px solid #eee;
+  font-size: 10px;
+  background: #f9f9f9;
+}
+
+.days-container {
+  display: flex;
+  flex: 1;
+}
+
+.day-column {
+  flex: 1;
+  border-right: 1px solid #ddd;
+}
+
+.day-header {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  background: #f5f5f5;
+}
+
+.day-slots {
+  position: relative;
+  height: 345px; /* 24 hours * 14.4px */
+}
+
+.event {
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  background: var(--purple);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  overflow: hidden;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.day-column.today {
+  background: rgba(255, 182, 193, 0.3); /* light pink */
+}
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <title>To-do</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<body>
+
+  <div class="layout">
+    <nav class="sidebar">
+      <a href="programmveckor.html">🏠</a>
+      <a href="schedule.html">📅</a>
+      <a href="todo.html">✏️</a>
+      <a href="login.html">👤</a>
+    </nav>
+
+    <main class="content">
+      <div class="card">
+        <div class="topbar">To-do list</div>
+        <input id="taskInput" placeholder="+ Add new task">
+        <button onclick="addTask()">Add</button>
+        <div id="tasks"></div>
+      </div>
+    </main>
+  </div>
+
+  <div class="wizard-area">
+    <div class="speech-bubble">
+      <small>Hej jag är Gandalf den hårige Trollkarlen!</small>
+      <p>
+        loremipsum loremipsum<br>
+        loremipsum loremipsum<br>
+        loremipsum loremipsum
+      </p>
+    </div>
+
+    <img src="wizardpic.png" alt="Trollkarl" class="wizard-img">
+    <button class="go-btn" onclick="toggleWizard()">Göm</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</body>
+
+</html>

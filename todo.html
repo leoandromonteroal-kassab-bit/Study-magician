@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
-<meta charset="UTF-8">
-<title>To-do</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>To-do</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <nav class="sidebar">
-    <a href="programmveckor.html">🏠</a>
-    <a href="schedule.html">📅</a>
-    <a href="todo.html">✏️</a>
-    <a href="login.html">👤</a>
-  </nav>
+<body>
 
-<main class="content">
-  <div class="card">
-    <div class="topbar">To-do list</div>
-    <input id="taskInput" placeholder="+ Add new task">
-    <button onclick="addTask()">Add</button>
-    <div id="tasks"></div>
+  <div class="layout">
+    <nav class="sidebar">
+      <a href="programmveckor.html">🏠</a>
+      <a href="schedule.html">📅</a>
+      <a href="todo.html">✏️</a>
+      <a href="login.html">👤</a>
+    </nav>
+
+    <main class="content">
+      <div class="card">
+        <div class="topbar">To-do list</div>
+        <input id="taskInput" placeholder="+ Add new task">
+        <button onclick="addTask()">Add</button>
+        <div id="tasks"></div>
+      </div>
+    </main>
   </div>
-</main>
 
-<script src="script.js"></script>
+  <div class="wizard-area">
+    <div class="speech-bubble">
+      <small>Hej jag är Gandalf den hårige Trollkarlen!</small>
+      <p>
+        loremipsum loremipsum<br>
+        loremipsum loremipsum<br>
+        loremipsum loremipsum
+      </p>
+    </div>
+
+    <img src="wizardpic.png" alt="Trollkarl" class="wizard-img">
+    <button class="go-btn" onclick="toggleWizard()">Göm</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+</body>
+
 </html>

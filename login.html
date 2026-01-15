@@ -1,39 +1,60 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
-<meta charset="UTF-8">
-<title>Login</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <nav class="sidebar">
-    <a href="programmveckor.html">🏠</a>
-    <a href="schedule.html">📅</a>
-    <a href="todo.html">✏️</a>
-    <a href="login.html">👤</a>
-  </nav>
+<body>
 
-<main class="content">
-  <div class="card split">
-    <div class="left">
-      <h2>Login</h2>
-      <input id="user" placeholder="Username">
-      <input id="pass" type="password" placeholder="Password">
-      <button onclick="login()">Log in</button>
-      <p id="loginMsg"></p>
-    </div>
+  <div class="layout">
+    <nav class="sidebar">
+      <a href="programmveckor.html">🏠</a>
+      <a href="schedule.html">📅</a>
+      <a href="todo.html">✏️</a>
+      <a href="login.html">👤</a>
+    </nav>
 
-    <div class="right">
-      <div>
-        <h2>Do you not have an account?</h2>
-        <button>Sign Up</button>
+    <main class="content">
+      <div class="card split">
+        <div class="left">
+          <h2>Login</h2>
+          <input id="user" placeholder="Username">
+          <input id="pass" type="password" placeholder="Password">
+          <button onclick="login()">Log in</button>
+          <p id="loginMsg"></p>
+        </div>
+
+        <div class="right">
+          <div>
+            <h2>Do you not have an account?</h2>
+            <button>Sign Up</button>
+          </div>
+        </div>
       </div>
-    </div>
+    </main>
   </div>
-</main>
 
+  <div class="wizard-area">
+    <div class="speech-bubble">
+      <small>Hej jag är Gandalf den hårige Trollkarlen!</small>
+      <p>
+        loremipsum loremipsum<br>
+        loremipsum loremipsum<br>
+        loremipsum loremipsum
+      </p>
+    </div>
 
-<script src="script.js"></script>
+    <img src="wizardpic.png" alt="Trollkarl" class="wizard-img">
+    <button class="go-btn" onclick="toggleWizard()">Göm</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+</body>
+
 </html>

@@ -3,7 +3,8 @@
 Namn på alla deltagare
 
 ### Tävlar i kategori:
-Webb / UI-UX / Programmering (välj den som passar)
+UI-UX 
+Bästa helhetslösning
 
 ---
 
